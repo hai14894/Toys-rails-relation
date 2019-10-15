@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+for i in 1..20
+    Toy.create(
+        name: "Toy#{i}",
+        description: "Toy#{i} is super safe",
+        date_posted: Time.now,
+        posted_by: ["Sally", "Sam", "Tyson", "Mark"].sample
+    )
+end
